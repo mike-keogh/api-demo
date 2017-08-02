@@ -2,6 +2,7 @@ import React from 'react'
 
 import People from './People'
 import Planets from './Planets'
+import Films from './Films'
 import {people} from '../api'
 
 class App extends React.Component {
@@ -14,6 +15,7 @@ class App extends React.Component {
           <div>
             <People />
             <Planets />
+            <Films />
           </div>
       </div>
     )

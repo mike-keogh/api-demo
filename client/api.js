@@ -15,3 +15,11 @@ export function planets(planet, cb) {
       cb(res.body)
     })
 }
+
+export function films(films, cb) {
+  request
+    .get('https://swapi.co/api/films/')
+    .end((err, res) => {
+      cb(res.body)
+    })
+}
