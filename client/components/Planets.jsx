@@ -1,5 +1,6 @@
 import React from 'react'
 import {planets} from '../api'
+import PlanetInfo from './PlanetInfo'
 
 export default class Planets extends React.Component {
   constructor(props) {
@@ -25,7 +26,7 @@ export default class Planets extends React.Component {
   }
 
   render() {
-    const renderPlanet = (planet, i) => (<li key={i}>{planet.name}</li>)
+    const renderPlanet = (planet, i) => (<PlanetInfo key={i} planet={planet} />)
     const renderPlanetList = planets => planets.map(renderPlanet)
     let {planets} = this.state
     return (
